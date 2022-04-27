@@ -43,19 +43,19 @@
 }
 
 .ql-picker-item[data-value="append-col"]::after {
-    content: "добавить столбец";
+    content: "Dodaj kolumnę";
 }
 
 .ql-picker-item[data-value="remove-col"]::after {
-    content: "убрать столбец"
+    content: "Usuń kolumnę"
 }
 
 .ql-picker-item[data-value="append-row"]::after {
-    content: "добавить строку";
+    content: "Dodaj wiersz";
 }
 
 .ql-picker-item[data-value="remove-row"]::after {
-    content: "убрать строку"
+    content: "Usuń wiersz"
 }
 
 .ql-table:nth-of-type(1),
