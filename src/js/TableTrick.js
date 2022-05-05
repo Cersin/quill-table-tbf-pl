@@ -26,6 +26,8 @@ export default class TableTrick {
             let col_count = Number.parseInt(sizes[2]);
             let table_id = TableTrick.random_id();
             let table = Parchment.create('table', table_id);
+            let isInTable = TableTrick.find_td(quill);
+            if (isInTable) return;
             for (var ri = 0; ri < row_count; ri++) {
                 let row_id = TableTrick.random_id();
                 let tr = Parchment.create('tr', row_id);

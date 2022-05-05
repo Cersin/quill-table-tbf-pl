@@ -12435,6 +12435,8 @@ var TableTrick = function () {
                 var col_count = (0, _parseInt2.default)(sizes[2]);
                 var table_id = TableTrick.random_id();
                 var table = Parchment.create('table', table_id);
+                var isInTable = TableTrick.find_td(quill);
+                if (isInTable) return;
                 for (var ri = 0; ri < row_count; ri++) {
                     var row_id = TableTrick.random_id();
                     var tr = Parchment.create('tr', row_id);
